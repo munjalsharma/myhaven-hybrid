@@ -1,10 +1,8 @@
-fastapi==0.115.0
-uvicorn[standard]==0.30.6
-python-dotenv==1.0.1
+fastapi>=0.115.2
+uvicorn[standard]
+python-dotenv
 groq
-torch
 transformers
-gradio
 python-multipart
 deep-translator
 requests
