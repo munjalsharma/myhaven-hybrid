@@ -1,3 +1,15 @@
 {
-  "cleanUrls": true
+  "buildCommand": "echo 'Deploying static frontend'",
+  "outputDirectory": ".",
+  "cleanUrls": true,
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/chat",
+      "destination": "/chatbot.html"
+    }
+  ]
 }
