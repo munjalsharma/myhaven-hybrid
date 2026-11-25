@@ -1,15 +1,32 @@
 {
-  "buildCommand": "echo 'Deploying static frontend'",
-  "outputDirectory": ".",
+  "version": 2,
   "cleanUrls": true,
-  "rewrites": [
+  "builds": [
     {
-      "source": "/",
-      "destination": "/index.html"
+      "src": "*.html",
+      "use": "@vercel/static"
     },
     {
-      "source": "/chat",
-      "destination": "/chatbot.html"
+      "src": "*.js",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "*.css",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/chat",
+      "dest": "/chatbot.html"
+    },
+    {
+      "src": "/team",
+      "dest": "/team.html"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/$1"
     }
   ]
 }
