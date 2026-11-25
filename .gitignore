@@ -1,0 +1,33 @@
+# Python / Virtual Environment
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.env
+.venv/
+env/
+venv/
+ENV/
+build/
+dist/
+
+# Large Model Weights (Keep out of standard git repo, upload to Hugging Face / Git LFS)
+*.pth
+*.pt
+*.bin
+muril_emotion_model.pth
+backend/muril_emotion_model.pth
+
+# Databases & logs
+*.db
+*.sqlite3
+myhaven.db
+backend/myhaven.db
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
